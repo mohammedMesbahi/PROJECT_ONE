@@ -23,7 +23,7 @@ namespace ConsoleApp1
     }
     public class Exercise_2 // a class contains two methods
     {
-        public static int[] insertInATable(int[] tableOfNumbers, int number) // a method to insert a number in a sorted Array
+        public static int[] insertInATable(int[] tableOfNumbers, int number) // insertInAtable to insert a number in a sorted Array
         {
             
             int position = findWeherToInsert(tableOfNumbers, number);
@@ -35,7 +35,7 @@ namespace ConsoleApp1
             tableOfNumbers[position] = number;
             return tableOfNumbers;
         }
-        public static int findWeherToInsert(int[] table, int number) //a method to locate the position to insert a number in a sorted array
+        public static int findWeherToInsert(int[] table, int number) // method to locate where to insert
         {
             for (int i = 0; i < table.Length; i++)
             {

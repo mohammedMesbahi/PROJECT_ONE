@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Exercice1 // a class conatains a method to determine if a number is Prime or not
+    public class Exercice1
     {
-        public static bool isPrimeNumber(int number)
+        public static bool isPrimeNumber(int number) // method to determine if a number is Prime or not
 
         {
             if (number == 1) return false;
@@ -21,9 +21,9 @@ namespace ConsoleApp1
             return true;
         }
     }
-    public class Exercise_2 // a class contains two methods
+    public class Exercise_2 
     {
-        public static int[] insertInATable(int[] tableOfNumbers, int number) // insertInAtable to insert a number in a sorted Array
+        public static int[] insertInATable(int[] tableOfNumbers, int number) // a method to insert a number in a sorted Array
         {
             
             int position = findWeherToInsert(tableOfNumbers, number);
@@ -48,25 +48,25 @@ namespace ConsoleApp1
         }
 
     }
-    public class program // the class program contains the Main method 
+    public class program 
     {
         
-        public static void Main(String[] arg)
+        public static void Main(String[] arg) // the Main method 
         {
             Console.WriteLine("********************** Exercise 1 : Prime numbers *****************************");
 
-            String input;   // variable to store the input of a user
+            String input;   // A variable to store the input
             bool IsValid_input = true; // a flag to determine if the input is valid or not
             int number; // a variable to store the input as an Integer
             
             do
             {
-                Console.Write("\tinput a number : "); // dispaly a message to ask for an input
-                input = Console.ReadLine();     // read the input 
-                IsValid_input = int.TryParse(input, out number); // check if the input is an Integer, if not ask the user to insert a value again
-            } while (!IsValid_input);
+                Console.Write("\tinput a number : "); //asking for an input
+                input = Console.ReadLine();     // reading the input form the console
+                IsValid_input = int.TryParse(input, out number); // converting the input into Integer
+            } while (!IsValid_input); // checking if the input is valid if not we ask again for an input
 
-            if (Exercice1.isPrimeNumber(number)) // checking the return of "isPrimeNumber" to display if the number is prime or not
+            if (Exercice1.isPrimeNumber(number)) // checking if the number is prime or not to display the corresponding output
                 Console.WriteLine("\t" +number + " is a prime number.");
             else
                 Console.WriteLine("\t" + number + " is not a prime number.");
@@ -77,21 +77,21 @@ namespace ConsoleApp1
 
             Console.WriteLine("********************** Exercise 2 : intsert a number in a sorted array  *****************************");
 
-            int[] tableOfNumbers = { 12, 14, 15, 19 }; // a sorted array contains 5 variables
-            Console.Write("\tthe initial Array : ");// printing the entire array
+            int[] tableOfNumbers = { 12, 14, 15, 19 }; // the array where we will insert the number
+            Console.Write("\tthe initial Array : ");// printing the array to the console
             foreach (var item in tableOfNumbers)
                 Console.Write(item + " "); 
             Console.WriteLine();
             do
             {
-                Console.Write("\tinput a number : "); // ask for an input
-                input = Console.ReadLine();     // read the input 
+                Console.Write("\tinput a number : "); // asking for an input
+                input = Console.ReadLine();     // reading the input 
                 IsValid_input = int.TryParse(input, out number);
-            } while (!IsValid_input); // check if the input is an Integer if not ask again for an input
+            } while (!IsValid_input); // checking if the input is valid.
 
             tableOfNumbers = Exercise_2.insertInATable(tableOfNumbers, number); // inserting the number in the array
             Console.Write("\tafter inserting " + number + " in the Array  :: ");
-            foreach (var item in tableOfNumbers) // print the entire array 
+            foreach (var item in tableOfNumbers) // printing the entire array 
             {
                 Console.Write(item + " ");
             }

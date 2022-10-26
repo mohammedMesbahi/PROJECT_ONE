@@ -89,15 +89,15 @@ namespace ConsoleApp1
                 IsValid_input = int.TryParse(input, out number);
             } while (!IsValid_input); // check if the input is an Integer if not ask again
 
-            tableOfNumbers = Exercise_2.insertInATable(tableOfNumbers, number); // insert the number in the array
-            Console.Write("\tafter inserting " + number + " in the Array : ");
+            tableOfNumbers = Exercise_2.insertInATable(tableOfNumbers, number); // inserting the number in the array
+            Console.Write("\tafter inserting " + number + " in the Array  :: ");
             foreach (var item in tableOfNumbers) // print the entire array 
             {
                 Console.Write(item + " ");
             }
             Console.WriteLine();
 
-        Console.WriteLine("********************** the end of the Second Exercise *****************************\n\n");
+        Console.WriteLine("********************* the end of the Second Exercise *****************************\n\n");
         }
     }
 }

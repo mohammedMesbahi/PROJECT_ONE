@@ -1,0 +1,8 @@
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\bin\Debug\TP1.exe.config
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\bin\Debug\TP1.exe
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\bin\Debug\TP1.pdb
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\obj\Debug\TP1.csproj.AssemblyReference.cache
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\obj\Debug\TP1.csproj.SuggestedBindingRedirects.cache
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\obj\Debug\TP1.csproj.CoreCompileInputs.cache
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\obj\Debug\TP1.exe
+C:\Users\mesba\OneDrive\S3\Mr.hashmoud\TP1\obj\Debug\TP1.pdb

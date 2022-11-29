@@ -10,3 +10,4 @@ Ecrire un programme en C# qui insère un entier dans son emplacement adéquat da
 -le tableau est déjà trié.
 
 -ne pas refaire le trie après insertion.
+![image](https://user-images.githubusercontent.com/116631139/204467803-bf169def-f565-4a1d-b38a-8db288adfc36.png)
